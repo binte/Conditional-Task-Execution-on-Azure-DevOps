@@ -1,0 +1,4 @@
+﻿steps:
+  - checkout: none
+  - script: echo 'triggered depends'
+    condition: failed()
