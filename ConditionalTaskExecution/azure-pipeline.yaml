@@ -1,7 +1,7 @@
 steps:
-  - checkout: none
-  - script: echo 'Task runs based on the checkout failure and the failed() condition'
-    condition: failed()
+  - script: echo 'Task run successfully'
+  - script: echo 'Task runs based on the checkout failure and the succeeded() condition'
+    condition: succeeded()
   - script: echo 'Task run successfully'
   - script: echo 'Task should only run if previous task fails'
     condition: failed()
