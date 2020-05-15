@@ -1,4 +1,5 @@
 ﻿steps:
   - checkout: none
-  - script: echo 'triggered depends'
+  - script: echo 'Task run successfully'
+  - script: echo 'Task should only run if previous task fails'
     condition: failed()
